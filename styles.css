@@ -30,11 +30,23 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-glow);
 }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .navbar-brand .logo {
-  height: 42px;
+  height: 36px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
+}
+.brand-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+  line-height: 1;
 }
 .nav-link { color: var(--text-light); font-weight: 500; }
 .nav-link:hover { color: var(--primary); }
