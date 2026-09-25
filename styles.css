@@ -250,11 +250,13 @@ body {
 
 .whatsapp-float {
   position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px;
-  background: #25d366; border-radius: 50%;
+  background: #25D366; border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0,0,0,.3);
   display: flex; align-items: center; justify-content: center; z-index: 999;
+  transition: transform .2s, background .2s;
 }
-.whatsapp-float img { width: 60px; height: auto; }
+.whatsapp-float:hover { background: #1DA851; transform: scale(1.08); }
+.whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
 
 .top-links { font-size: 13px; }
 .top-links a { color: var(--text-muted); text-decoration: none; margin-left: 14px; }
