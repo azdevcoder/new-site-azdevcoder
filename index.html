@@ -1,248 +1,921 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>AzDev Coder | Desenvolvimento, Cloud, Webmail, Chat Interno e Suporte</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AzDev Coder: desenvolvimento sob medida, cloud gerenciada, webmail profissional, chat interno empresarial e suporte técnico. Maringá - PR.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/img/logo1.png">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-glass">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img class="logo" src="assets/img/logo1.png" alt="AzDev Coder">
-      <span class="brand-text">AzDev Coder</span>
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#solucoes" role="button" data-bs-toggle="dropdown">Soluções</a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="desenvolvimento.html"><span class="sol-num">01</span><strong>Desenvolvimento</strong><small>Sites, sistemas e automações sob medida</small></a></li>
-            <li><a class="dropdown-item" href="cloud.html"><span class="sol-num">02</span><strong>Cloud</strong><small>Hospedagem gerenciada e segura</small></a></li>
-            <li><a class="dropdown-item" href="webmail.html"><span class="sol-num">03</span><strong>Webmail</strong><small>E-mail profissional no seu domínio</small></a></li>
-            <li><a class="dropdown-item" href="chat-interno.html"><span class="sol-num">04</span><strong>Chat Interno</strong><small>Comunicação da equipe em um só lugar</small></a></li>
-            <li><a class="dropdown-item" href="suporte.html"><span class="sol-num">05</span><strong>Suporte</strong><small>Acompanhamento técnico contínuo</small></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      AzDev Coder | Desenvolvimento, Cloud, Webmail, Z-Chat e Suporte
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AzDev Coder: desenvolvimento sob medida, cloud gerenciada, webmail profissional, chat interno empresarial e suporte técnico. Maringá - PR."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/img/logo1.png" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-glass">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img class="logo" src="assets/img/logo1.png" alt="AzDev Coder" />
+          <span class="brand-text">AzDev Coder</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#solucoes"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Soluções</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="desenvolvimento.html"
+                    ><span class="sol-num">01</span
+                    ><strong>Desenvolvimento</strong
+                    ><small>Sites, sistemas e automações sob medida</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cloud.html"
+                    ><span class="sol-num">02</span><strong>Cloud</strong
+                    ><small>Hospedagem gerenciada e segura</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="webmail.html"
+                    ><span class="sol-num">03</span><strong>Webmail</strong
+                    ><small>E-mail profissional no seu domínio</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chat-interno.html"
+                    ><span class="sol-num">04</span><strong>Z-Chat</strong
+                    ><small>Comunicação da equipe em um só lugar</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="zcrm.html"
+                    ><span class="sol-num">05</span><strong>Z-CRM</strong
+                    ><small>Funil de vendas e follow-up</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="zsign.html"
+                    ><span class="sol-num">06</span><strong>Z-Sign</strong
+                    ><small>Assinatura e gestão de contratos</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sistemas.html"
+                    ><span class="sol-num">07</span><strong>Sistemas</strong
+                    ><small>Clínicas, advocacia, food e captação</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bots-atendimento.html"
+                    ><span class="sol-num">08</span
+                    ><strong>Bots de Atendimento</strong
+                    ><small>WhatsApp, Instagram, e-mail e Telegram</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="agentes-ia.html"
+                    ><span class="sol-num">09</span
+                    ><strong>Agentes de IA</strong
+                    ><small>Funcionários virtuais para o dia a dia</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="certificado-digital.html"
+                    ><span class="sol-num">10</span
+                    ><strong>Certificado Digital</strong
+                    ><small>e-CPF, e-CNPJ e renovação</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="suporte.html"
+                    ><span class="sol-num">11</span><strong>Suporte</strong
+                    ><small>Acompanhamento técnico contínuo</small></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="dominios.html"
+                    ><span class="sol-num">12</span><strong>Domínios</strong
+                    ><small>Registro e renovação de domínios</small></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#como-funciona">Como funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">Dúvidas</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://portfolio.azdevcoder.com.br"
+                target="_blank"
+                rel="noopener"
+                >Portfólio</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block top-links">
+              <a
+                href="area-do-cliente.html"
+                aria-label="Área do cliente"
+                title="Área do cliente"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  /></svg
+              ></a>
+              <a href="webmail-login.html"></a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a href="#brief" class="btn btn-primary btn-sm px-3 py-2"
+                >Solicitar proposta</a
+              >
+            </li>
           </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#como-funciona">Como funciona</a></li>
-        <li class="nav-item"><a class="nav-link" href="#faq">Dúvidas</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://portfolio.azdevcoder.com.br" target="_blank" rel="noopener">Portfólio</a></li>
-        <li class="nav-item d-none d-lg-block top-links">
-          <a href="area-do-cliente.html">Área do cliente</a>
-          <a href="webmail-login.html"></a>
-        </li>
-        <li class="nav-item ms-lg-2">
-          <a href="#brief" class="btn btn-primary btn-sm px-3 py-2">Solicitar proposta</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6 text-center text-lg-start">
-        <span class="eyebrow">DESENVOLVIMENTO SOB MEDIDA</span>
-        <h1 class="display-5 fw-bold">Sua operação tem um desafio.<br><span class="text-primary">Nós criamos a solução.</span></h1>
-        <p class="lead text-muted mt-3">Sites, sistemas, cloud, e-mail profissional, chat interno e suporte — tecnologia completa para sua empresa organizar processos, automatizar tarefas e crescer com controle.</p>
-        <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4 flex-wrap">
-          <a href="#brief" class="btn btn-primary btn-lg">Descrever meu projeto →</a>
-          <a href="https://wa.me/5544988469950" target="_blank" class="btn-ghost btn-lg">◉ Falar no WhatsApp</a>
         </div>
-        <p class="text-muted mt-3 small">✓ Análise inicial sem compromisso &nbsp; ✓ Resposta direta de quem desenvolve</p>
       </div>
-      <div class="col-lg-6">
-        <div class="code-window">
-          <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="ms-2">azdevcoder / seu-projeto ● online</span></div>
-          <div class="code-body">
-            <span class="c"># do problema à solução</span><br>
-            sua_operacao = {<br>
-            &nbsp;&nbsp;<span class="s">"feito_para"</span>: <span class="s">"seu negócio"</span>,<br>
-            &nbsp;&nbsp;<span class="s">"processos"</span>: <span class="s">"automatizados"</span>,<br>
-            &nbsp;&nbsp;<span class="s">"cloud"</span>: <span class="s">"gerenciada"</span>,<br>
-            &nbsp;&nbsp;<span class="s">"email"</span>: <span class="s">"voce@suaempresa.com.br"</span>,<br>
-            &nbsp;&nbsp;<span class="s">"equipe"</span>: <span class="s">"conectada"</span>,<br>
-            &nbsp;&nbsp;<span class="s">"suporte"</span>: <span class="b">True</span><br>
-            }<br>
-            <br>
-            azdev.<span class="k">construir</span>(sua_ideia);
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="eyebrow">DESENVOLVIMENTO SOB MEDIDA</span>
+            <h1 class="display-5 fw-bold">
+              Sua operação tem um desafio.<br /><span class="text-primary"
+                >Nós criamos a solução.</span
+              >
+            </h1>
+            <p class="lead text-muted mt-3">
+              Sites, sistemas, cloud, e-mail profissional, chat interno e
+              suporte — tecnologia completa para sua empresa organizar
+              processos, automatizar tarefas e crescer com controle.
+            </p>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4 flex-wrap"
+            >
+              <a href="#brief" class="btn btn-primary btn-lg"
+                >Descrever meu projeto →</a
+              >
+              <a
+                href="https://wa.me/5544988469950"
+                target="_blank"
+                class="btn-ghost btn-lg"
+                >◉ Falar no WhatsApp</a
+              >
+            </div>
+            <p class="text-muted mt-3 small">
+              ✓ Análise inicial sem compromisso &nbsp; ✓ Resposta direta de quem
+              desenvolve
+            </p>
           </div>
-          <div class="deploy-card"><span><span class="status-dot"></span><strong>Seu sistema no ar</strong><br><small class="text-muted">Produção • monitorado</small></span><span>↗</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- SOLUÇÕES -->
-<section id="solucoes" class="section">
-  <div class="container text-center">
-    <h2 class="section-title">Tecnologia completa <span class="text-primary">ao redor da sua empresa</span></h2>
-    <p class="section-subtitle mt-3">Comece pelo desenvolvimento e complemente com infraestrutura, comunicação e suporte — tudo com um único parceiro.</p>
-    <div class="row g-4 mt-4 text-start">
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="desenvolvimento.html"><span class="sol-num">01</span><h5>Desenvolvimento</h5><p>Sites, sistemas web, e-commerces, dashboards e automações feitos para sua operação.</p><span class="go">Conhecer →</span></a></div>
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="cloud.html"><span class="sol-num">02</span><h5>Cloud</h5><p>Hospedagem gerenciada com backups, SSL, monitoramento e segurança.</p><span class="go">Conhecer →</span></a></div>
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="webmail.html"><span class="sol-num">03</span><h5>Webmail</h5><p>E-mail profissional no domínio da sua empresa, com antispam e backup.</p><span class="go">Conhecer →</span></a></div>
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="chat-interno.html"><span class="sol-num">04</span><h5>Chat Interno</h5><p>Canais por equipe, mensagens, arquivos e atendimento organizado.</p><span class="go">Conhecer →</span></a></div>
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="suporte.html"><span class="sol-num">05</span><h5>Suporte</h5><p>Acompanhamento técnico para dúvidas, incidentes e evolução contínua.</p><span class="go">Conhecer →</span></a></div>
-      <div class="col-md-6 col-lg-4"><a class="sol-card" href="https://portfolio.azdevcoder.com.br" target="_blank" rel="noopener"><span class="sol-num">★</span><h5>Portfólio</h5><p>Veja projetos reais entregues com foco em performance e resultado.</p><span class="go">Ver projetos →</span></a></div>
-    </div>
-  </div>
-</section>
-
-<!-- DESTAQUE DESENVOLVIMENTO -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <span class="eyebrow">NOSSA PRINCIPAL SOLUÇÃO</span>
-        <h2 class="section-title">Seu processo.<br>Seu sistema.</h2>
-        <p class="text-muted mt-3">Em vez de adaptar sua empresa a um software pronto, criamos a tecnologia em torno de como você já trabalha.</p>
-        <ul class="check-list">
-          <li>Feito para suas regras e sua operação</li>
-          <li>Entregas por etapas, com sua validação</li>
-          <li>Pronto para integrar e evoluir</li>
-        </ul>
-        <div class="d-flex gap-3 flex-wrap">
-          <a href="desenvolvimento.html" class="btn btn-primary">Conhecer Desenvolvimento →</a>
-          <a href="#brief" class="btn-ghost">Pedir análise gratuita</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="row g-3">
-          <div class="col-6"><div class="mini-card"><h6>▦ Sistemas de gestão</h6><small class="text-muted">Controle e organização</small></div></div>
-          <div class="col-6"><div class="mini-card"><h6>⌁ Automações</h6><small class="text-muted">Menos tarefa manual</small></div></div>
-          <div class="col-6"><div class="mini-card"><h6>◫ Sites e portais</h6><small class="text-muted">Presença e conversão</small></div></div>
-          <div class="col-6"><div class="mini-card"><h6>◉ Dashboards</h6><small class="text-muted">Decisão com dados</small></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section id="como-funciona" class="section">
-  <div class="container text-center">
-    <h2 class="section-title">Um processo claro. <span class="text-primary">Sem surpresas.</span></h2>
-    <p class="section-subtitle mt-3">Do primeiro contato ao go-live, você sabe o que acontece em cada etapa.</p>
-    <div class="row g-4 mt-4 text-start">
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">01</span><h5>Você apresenta a ideia</h5><p class="text-muted">Entendemos o problema e o resultado esperado.</p></div></div>
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">02</span><h5>Analisamos o projeto</h5><p class="text-muted">Mapeamos funções, regras e integrações.</p></div></div>
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">03</span><h5>Planejamos juntos</h5><p class="text-muted">Definimos escopo, etapas e prazos.</p></div></div>
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">04</span><h5>Criamos e validamos</h5><p class="text-muted">Você acompanha e valida cada evolução.</p></div></div>
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">05</span><h5>Colocamos no ar</h5><p class="text-muted">Testamos, publicamos e acompanhamos.</p></div></div>
-      <div class="col-md-6 col-lg-4"><div class="step-card"><span class="step-number">+ </span><h5>Sustentamos a operação</h5><p class="text-muted">Cloud, webmail, chat e suporte mantêm tudo rodando.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPLEMENTARES -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Além do sistema: <span class="text-primary">operação completa</span></h2>
-      <p class="section-subtitle mt-3">Infraestrutura e comunicação para o dia a dia da empresa.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-3"><div class="price-card"><h5>☁ Cloud</h5><p class="text-muted small">Servidor gerenciado, backups automáticos, SSL e monitoramento.</p><div class="price-tag">R$ 199<small>/mês*</small></div><p class="text-muted small">Planos para sites e sistemas.</p><a href="cloud.html" class="btn btn-outline-info w-100 mt-2">Ver Cloud</a></div></div>
-      <div class="col-md-6 col-lg-3"><div class="price-card"><h5>@ Webmail</h5><p class="text-muted small">voce@suaempresa.com.br com antispam, backup e acesso mobile.</p><div class="price-tag">R$ 49,90<small>/mês*</small></div><p class="text-muted small">5 caixas de e-mail, migração incluída.</p><a href="webmail.html" class="btn btn-outline-info w-100 mt-2">Ver Webmail</a></div></div>
-      <div class="col-md-6 col-lg-3"><div class="price-card featured"><span class="badge-top">PARA EQUIPES</span><h5>◉ Chat Interno</h5><p class="text-muted small">Canais, arquivos, histórico e atendimento interno organizado.</p><div class="price-tag">Consulte<small> por usuário</small></div><p class="text-muted small">Implantação + treinamento.</p><a href="chat-interno.html" class="btn btn-primary w-100 mt-2">Ver Chat Interno</a></div></div>
-      <div class="col-md-6 col-lg-3"><div class="price-card"><h5>☼ Suporte</h5><p class="text-muted small">Acompanhamento técnico, dúvidas e incidentes com SLA.</p><div class="price-tag">R$ 300<small>/mês</small></div><p class="text-muted small">Horário comercial + plantão crítico.</p><a href="suporte.html" class="btn btn-outline-info w-100 mt-2">Ver Suporte</a></div></div>
-    </div>
-    <p class="text-muted small text-center mt-3">*Valores de referência — proposta final conforme escopo.</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="section">
-  <div class="container" style="max-width:820px">
-    <div class="text-center mb-4">
-      <h2 class="section-title">Antes de começar, <span class="text-primary">vale saber.</span></h2>
-      <p class="section-subtitle mt-2">Dúvidas frequentes sobre desenvolvimento, hospedagem e suporte.</p>
-    </div>
-    <div class="accordion" id="faqAcc">
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f1">Vocês criam sistema do zero ou adaptam um pronto?</button></h2><div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Criamos sob medida a partir do seu processo. Quando faz sentido, aproveitamos base própria para acelerar prazo e reduzir custo — sempre com escopo aprovado por você.</div></div></div>
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">A hospedagem está incluída no desenvolvimento?</button></h2><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Não. O desenvolvimento entrega o sistema pronto; a hospedagem pode ser contratada à parte na AzDev Cloud, com backups, SSL, monitoramento e suporte.</div></div></div>
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">O e-mail profissional está incluído?</button></h2><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Não. O Webmail AzDev é contratado separadamente, com domínio próprio, antispam, backup e configuração de SPF, DKIM e DMARC.</div></div></div>
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f4">O que é o Chat Interno?</button></h2><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">É o ambiente de comunicação da sua equipe: canais por setor, troca de arquivos, histórico pesquisável e organização do atendimento interno — no computador e no celular.</div></div></div>
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f5">Correção de erros é cobrada?</button></h2><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Não para falhas comprovadamente do código entregue dentro do escopo aprovado. Novas regras, mudanças estruturais e treinamentos são orçados à parte — ou cobertos pelo plano de Suporte.</div></div></div>
-      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f6">Como solicito novas funcionalidades?</button></h2><div id="f6" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Pelo canal de suporte ou WhatsApp. Avaliamos impacto técnico, apresentamos prazo e valor, e só executamos após sua aprovação.</div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- BRIEF -->
-<section id="brief" class="section section-dark">
-  <div class="container">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5">
-        <h2 class="section-title">Conte sua ideia.<br><span class="text-primary">O primeiro passo é por nossa conta.</span></h2>
-        <p class="text-muted mt-3">Descreva seu desafio. Analisamos o cenário e retornamos com o melhor caminho.</p>
-        <ul class="check-list"><li>Análise inicial sem compromisso</li><li>Conversa direta com quem desenvolve</li><li>Orientação sobre a melhor modalidade</li></ul>
-      </div>
-      <div class="col-lg-7">
-        <form class="brief-box" id="briefForm">
-          <div class="row g-3">
-            <div class="col-md-6"><label class="form-label">Seu nome *</label><input class="form-control" id="bNome" required placeholder="Como podemos te chamar?"></div>
-            <div class="col-md-6"><label class="form-label">Empresa</label><input class="form-control" id="bEmpresa" placeholder="Opcional"></div>
-            <div class="col-md-6"><label class="form-label">WhatsApp *</label><input class="form-control" id="bZap" required placeholder="(44) 99999-9999"></div>
-            <div class="col-md-6"><label class="form-label">E-mail *</label><input type="email" class="form-control" id="bEmail" required placeholder="voce@empresa.com.br"></div>
-            <div class="col-12"><label class="form-label">Qual solução você procura? *</label><select class="form-select" id="bSol"><option>Desenvolvimento</option><option>Cloud</option><option>Webmail</option><option>Chat Interno</option><option>Suporte</option><option>Ainda não sei / Quero orientação</option></select></div>
-            <div class="col-12"><label class="form-label">Descreva seu desafio *</label><textarea class="form-control" id="bMsg" rows="4" required placeholder="Ex.: preciso organizar orçamentos, automatizar cobranças e ter e-mail profissional..."></textarea></div>
-            <div class="col-12"><button class="btn btn-primary w-100 btn-lg" type="submit">Enviar solicitação →</button><p class="text-muted small mt-2 mb-0">Ao enviar, abriremos seu WhatsApp com a mensagem pronta. Seus dados são usados só para responder.</p></div>
+          <div class="col-lg-6">
+            <div class="code-window">
+              <div class="code-header">
+                <span class="dot r"></span><span class="dot y"></span
+                ><span class="dot g"></span
+                ><span class="ms-2">azdevcoder / seu-projeto ● online</span>
+              </div>
+              <div class="code-body">
+                <span class="c"># do problema à solução</span><br />
+                sua_operacao = {<br />
+                &nbsp;&nbsp;<span class="s">"feito_para"</span>:
+                <span class="s">"seu negócio"</span>,<br />
+                &nbsp;&nbsp;<span class="s">"processos"</span>:
+                <span class="s">"automatizados"</span>,<br />
+                &nbsp;&nbsp;<span class="s">"cloud"</span>:
+                <span class="s">"gerenciada"</span>,<br />
+                &nbsp;&nbsp;<span class="s">"email"</span>:
+                <span class="s">"voce@suaempresa.com.br"</span>,<br />
+                &nbsp;&nbsp;<span class="s">"equipe"</span>:
+                <span class="s">"conectada"</span>,<br />
+                &nbsp;&nbsp;<span class="s">"suporte"</span>:
+                <span class="b">True</span><br />
+                }<br />
+                <br />
+                azdev.<span class="k">construir</span>(sua_ideia);
+              </div>
+              <div class="deploy-card">
+                <span
+                  ><span class="status-dot"></span
+                  ><strong>Seu sistema no ar</strong><br /><small
+                    class="text-muted"
+                    >Produção • monitorado</small
+                  ></span
+                ><span>↗</span>
+              </div>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </header>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <img src="assets/img/logo1.png" alt="AzDev Coder" style="height:36px;width:auto" class="mb-3">
-        <p>Soluções sob medida para empresas que querem operar melhor e crescer com controle.</p>
+    <!-- SOLUÇÕES -->
+    <section id="solucoes" class="section">
+      <div class="container text-center">
+        <h2 class="section-title">
+          Tecnologia completa
+          <span class="text-primary">ao redor da sua empresa</span>
+        </h2>
+        <p class="section-subtitle mt-3">
+          Comece pelo desenvolvimento e complemente com infraestrutura,
+          comunicação e suporte — tudo com um único parceiro.
+        </p>
+        <div class="row g-4 mt-4 text-start">
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="desenvolvimento.html"
+              ><span class="sol-num">01</span>
+              <h5>Desenvolvimento</h5>
+              <p>
+                Sites, sistemas web, e-commerces, dashboards e automações feitos
+                para sua operação.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="cloud.html"
+              ><span class="sol-num">02</span>
+              <h5>Cloud</h5>
+              <p>
+                Hospedagem gerenciada com backups, SSL, monitoramento e
+                segurança.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="webmail.html"
+              ><span class="sol-num">03</span>
+              <h5>Webmail</h5>
+              <p>
+                E-mail profissional no domínio da sua empresa, com antispam e
+                backup.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="chat-interno.html"
+              ><span class="sol-num">04</span>
+              <h5>Z-Chat</h5>
+              <p>
+                Canais por equipe, mensagens, arquivos e atendimento organizado.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="zcrm.html"
+              ><span class="sol-num">05</span>
+              <h5>Z-CRM</h5>
+              <p>Clientes, funil de vendas e follow-up em um só lugar.</p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="zsign.html"
+              ><span class="sol-num">06</span>
+              <h5>Z-Sign</h5>
+              <p>Assinatura eletrônica e gestão de contratos em um só lugar.</p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="sistemas.html"
+              ><span class="sol-num">07</span>
+              <h5>Sistemas</h5>
+              <p>
+                Sistemas por segmento: clínicas, advocacia, restaurantes,
+                pizzarias e captação de clientes.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="bots-atendimento.html"
+              ><span class="sol-num">08</span>
+              <h5>Bots de Atendimento</h5>
+              <p>
+                Atendimento automático no WhatsApp, Instagram, e-mail e
+                Telegram.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="agentes-ia.html"
+              ><span class="sol-num">09</span>
+              <h5>Agentes de IA</h5>
+              <p>
+                Funcionários virtuais que automatizam as rotinas do dia a dia.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="certificado-digital.html"
+              ><span class="sol-num">10</span>
+              <h5>Certificado Digital</h5>
+              <p>
+                Emissão e renovação de e-CPF e e-CNPJ com atendimento guiado.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="suporte.html"
+              ><span class="sol-num">11</span>
+              <h5>Suporte</h5>
+              <p>
+                Acompanhamento técnico para dúvidas, incidentes e evolução
+                contínua.
+              </p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="sol-card" href="dominios.html"
+              ><span class="sol-num">12</span>
+              <h5>Domínios</h5>
+              <p>Registro e renovação de domínios a partir de R$ 49/ano.</p>
+              <span class="go">Conhecer →</span></a
+            >
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a
+              class="sol-card"
+              href="https://portfolio.azdevcoder.com.br"
+              target="_blank"
+              rel="noopener"
+              ><span class="sol-num">★</span>
+              <h5>Portfólio</h5>
+              <p>
+                Veja projetos reais entregues com foco em performance e
+                resultado.
+              </p>
+              <span class="go">Ver projetos →</span></a
+            >
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-4">
-        <h6>Soluções</h6>
-        <a href="desenvolvimento.html">Desenvolvimento</a>
-        <a href="cloud.html">Cloud</a>
-        <a href="webmail.html">Webmail</a>
-        <a href="chat-interno.html">Chat Interno</a>
-        <a href="suporte.html">Suporte</a>
-      </div>
-      <div class="col-6 col-md-4">
-        <h6>Contato</h6>
-        <a href="mailto:contato@azdevcoder.com.br">contato@azdevcoder.com.br</a>
-        <a href="https://wa.me/5544988469950" target="_blank">Falar no WhatsApp</a>
-        <a href="https://webmail.azdevcoder.com.br" target="_blank">Acessar Webmail</a>
-        <a href="https://portfolio.azdevcoder.com.br" target="_blank" rel="noopener">Portfólio</a>
-      </div>
-    </div>
-    <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
-      <span>© <span id="year">2026</span> AzDev Coder — Todos os direitos reservados • CNPJ: 58.964.559/0001-11 • Maringá - PR</span>
-      <span><a href="#" class="d-inline">Privacidade</a> • <a href="#" class="d-inline">Termos</a></span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<a href="https://wa.me/5544988469950" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+    <!-- DESTAQUE DESENVOLVIMENTO -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">NOSSA PRINCIPAL SOLUÇÃO</span>
+            <h2 class="section-title">Seu processo.<br />Seu sistema.</h2>
+            <p class="text-muted mt-3">
+              Em vez de adaptar sua empresa a um software pronto, criamos a
+              tecnologia em torno de como você já trabalha.
+            </p>
+            <ul class="check-list">
+              <li>Feito para suas regras e sua operação</li>
+              <li>Entregas por etapas, com sua validação</li>
+              <li>Pronto para integrar e evoluir</li>
+            </ul>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="desenvolvimento.html" class="btn btn-primary"
+                >Conhecer Desenvolvimento →</a
+              >
+              <a href="#brief" class="btn-ghost">Pedir análise gratuita</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="mini-card">
+                  <h6>▦ Sistemas de gestão</h6>
+                  <small class="text-muted">Controle e organização</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mini-card">
+                  <h6>⌁ Automações</h6>
+                  <small class="text-muted">Menos tarefa manual</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mini-card">
+                  <h6>◫ Sites e portais</h6>
+                  <small class="text-muted">Presença e conversão</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mini-card">
+                  <h6>◉ Dashboards</h6>
+                  <small class="text-muted">Decisão com dados</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts.js"></script>
-</body>
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+      <div class="container text-center">
+        <h2 class="section-title">
+          Um processo claro. <span class="text-primary">Sem surpresas.</span>
+        </h2>
+        <p class="section-subtitle mt-3">
+          Do primeiro contato ao go-live, você sabe o que acontece em cada
+          etapa.
+        </p>
+        <div class="row g-4 mt-4 text-start">
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <h5>Você apresenta a ideia</h5>
+              <p class="text-muted">
+                Entendemos o problema e o resultado esperado.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <h5>Analisamos o projeto</h5>
+              <p class="text-muted">Mapeamos funções, regras e integrações.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <h5>Planejamos juntos</h5>
+              <p class="text-muted">Definimos escopo, etapas e prazos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">04</span>
+              <h5>Criamos e validamos</h5>
+              <p class="text-muted">Você acompanha e valida cada evolução.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">05</span>
+              <h5>Colocamos no ar</h5>
+              <p class="text-muted">Testamos, publicamos e acompanhamos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card">
+              <span class="step-number">+ </span>
+              <h5>Sustentamos a operação</h5>
+              <p class="text-muted">
+                Cloud, webmail, chat e suporte mantêm tudo rodando.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLEMENTARES -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">
+            Além do sistema: <span class="text-primary">operação completa</span>
+          </h2>
+          <p class="section-subtitle mt-3">
+            Infraestrutura e comunicação para o dia a dia da empresa.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="price-card">
+              <h5>☁ Cloud</h5>
+              <p class="text-muted small">
+                Servidor gerenciado, backups automáticos, SSL e monitoramento.
+              </p>
+              <div class="price-tag">R$ 199<small>/mês*</small></div><p class="text-muted small mb-0">ou <strong>R$ 1.990/ano</strong> · 2 meses de desconto</p>
+              <p class="text-muted small">Planos para sites e sistemas.</p>
+              <a href="cloud.html" class="btn btn-outline-info w-100 mt-2"
+                >Ver Cloud</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-card">
+              <h5>@ Webmail</h5>
+              <p class="text-muted small">
+                voce@suaempresa.com.br com antispam, backup e acesso mobile.
+              </p>
+              <div class="price-tag">R$ 49,90<small>/mês*</small></div><p class="text-muted small mb-0">ou <strong>R$ 499/ano</strong> · 2 meses de desconto</p>
+              <p class="text-muted small">
+                5 caixas de e-mail, migração incluída.
+              </p>
+              <a href="webmail.html" class="btn btn-outline-info w-100 mt-2"
+                >Ver Webmail</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-card featured">
+              <span class="badge-top">PARA EQUIPES</span>
+              <h5>◉ Z-Chat</h5>
+              <p class="text-muted small">
+                Canais, arquivos, histórico e atendimento interno organizado.
+              </p>
+              <div class="price-tag">A partir de R$ 499<small>/mês</small></div><p class="text-muted small mb-0">ou <strong>A partir de R$ 4.990/ano</strong> · 2 meses de desconto</p>
+              <p class="text-muted small">Setup R$ 1.999 • por usuário.</p>
+              <a href="chat-interno.html" class="btn btn-primary w-100 mt-2"
+                >Ver Z-Chat</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-card">
+              <h5>☼ Suporte</h5>
+              <p class="text-muted small">
+                Acompanhamento técnico, dúvidas e incidentes com SLA.
+              </p>
+              <div class="price-tag">R$ 300<small>/mês</small></div><p class="text-muted small mb-0">ou <strong>R$ 3.000/ano</strong> · 2 meses de desconto</p>
+              <p class="text-muted small">
+                Horário comercial + plantão crítico.
+              </p>
+              <a href="suporte.html" class="btn btn-outline-info w-100 mt-2"
+                >Ver Suporte</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="text-muted small text-center mt-3">
+          *Valores de referência — proposta final conforme escopo.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container" style="max-width: 820px">
+        <div class="text-center mb-4">
+          <h2 class="section-title">
+            Antes de começar, <span class="text-primary">vale saber.</span>
+          </h2>
+          <p class="section-subtitle mt-2">
+            Dúvidas frequentes sobre desenvolvimento, hospedagem e suporte.
+          </p>
+        </div>
+        <div class="accordion" id="faqAcc">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f1"
+              >
+                Vocês criam sistema do zero ou adaptam um pronto?
+              </button>
+            </h2>
+            <div
+              id="f1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                Criamos sob medida a partir do seu processo. Quando faz sentido,
+                aproveitamos base própria para acelerar prazo e reduzir custo —
+                sempre com escopo aprovado por você.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f2"
+              >
+                A hospedagem está incluída no desenvolvimento?
+              </button>
+            </h2>
+            <div
+              id="f2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                Não. O desenvolvimento entrega o sistema pronto; a hospedagem
+                pode ser contratada à parte na AzDev Cloud, com backups, SSL,
+                monitoramento e suporte.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f3"
+              >
+                O e-mail profissional está incluído?
+              </button>
+            </h2>
+            <div
+              id="f3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                Não. O Webmail AzDev é contratado separadamente, com domínio
+                próprio, antispam, backup e configuração de SPF, DKIM e DMARC.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f4"
+              >
+                O que é o Z-Chat?
+              </button>
+            </h2>
+            <div
+              id="f4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                É o ambiente de comunicação da sua equipe: canais por setor,
+                troca de arquivos, histórico pesquisável e organização do
+                atendimento interno — no computador e no celular.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f5"
+              >
+                Correção de erros é cobrada?
+              </button>
+            </h2>
+            <div
+              id="f5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                Não para falhas comprovadamente do código entregue dentro do
+                escopo aprovado. Novas regras, mudanças estruturais e
+                treinamentos são orçados à parte — ou cobertos pelo plano de
+                Suporte.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#f6"
+              >
+                Como solicito novas funcionalidades?
+              </button>
+            </h2>
+            <div
+              id="f6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAcc"
+            >
+              <div class="accordion-body">
+                Pelo canal de suporte ou WhatsApp. Avaliamos impacto técnico,
+                apresentamos prazo e valor, e só executamos após sua aprovação.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRIEF -->
+    <section id="brief" class="section section-dark">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="section-title">
+              Conte sua ideia.<br /><span class="text-primary"
+                >O primeiro passo é por nossa conta.</span
+              >
+            </h2>
+            <p class="text-muted mt-3">
+              Descreva seu desafio. Analisamos o cenário e retornamos com o
+              melhor caminho.
+            </p>
+            <ul class="check-list">
+              <li>Análise inicial sem compromisso</li>
+              <li>Conversa direta com quem desenvolve</li>
+              <li>Orientação sobre a melhor modalidade</li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <form class="brief-box" id="briefForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Seu nome *</label
+                  ><input
+                    class="form-control"
+                    id="bNome"
+                    required
+                    placeholder="Como podemos te chamar?"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Empresa</label
+                  ><input
+                    class="form-control"
+                    id="bEmpresa"
+                    placeholder="Opcional"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">WhatsApp *</label
+                  ><input
+                    class="form-control"
+                    id="bZap"
+                    required
+                    placeholder="(44) 99999-9999"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">E-mail *</label
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="bEmail"
+                    required
+                    placeholder="voce@empresa.com.br"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Qual solução você procura? *</label
+                  ><select class="form-select" id="bSol">
+                    <option>Desenvolvimento</option>
+                    <option>Cloud</option>
+                    <option>Webmail</option>
+                    <option>Z-Chat</option>
+                    <option>Z-CRM</option>
+                    <option>Z-Sign</option>
+                    <option>Sistemas</option>
+                    <option>Bots de Atendimento</option>
+                    <option>Agentes de IA</option>
+                    <option>Certificado Digital</option>
+                    <option>Suporte</option>
+                    <option>Domínios</option>
+                    <option>Ainda não sei / Quero orientação</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Descreva seu desafio *</label
+                  ><textarea
+                    class="form-control"
+                    id="bMsg"
+                    rows="4"
+                    required
+                    placeholder="Ex.: preciso organizar orçamentos, automatizar cobranças e ter e-mail profissional..."
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100 btn-lg" type="submit">
+                    Enviar solicitação →
+                  </button>
+                  <p class="text-muted small mt-2 mb-0">
+                    Ao enviar, abriremos seu WhatsApp com a mensagem pronta.
+                    Seus dados são usados só para responder.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img
+              src="assets/img/logo1.png"
+              alt="AzDev Coder"
+              style="height: 36px; width: auto"
+              class="mb-3"
+            />
+            <p>
+              Soluções sob medida para empresas que querem operar melhor e
+              crescer com controle.
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6>Soluções</h6>
+            <a href="desenvolvimento.html">Desenvolvimento</a>
+            <a href="cloud.html">Cloud</a>
+            <a href="webmail.html">Webmail</a>
+            <a href="chat-interno.html">Z-Chat</a>
+            <a href="zcrm.html">Z-CRM</a>
+            <a href="zsign.html">Z-Sign</a>
+            <a href="sistemas.html">Sistemas</a>
+            <a href="bots-atendimento.html">Bots de Atendimento</a>
+            <a href="agentes-ia.html">Agentes de IA</a>
+            <a href="certificado-digital.html">Certificado Digital</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="dominios.html">Domínios</a>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6>Contato</h6>
+            <a href="mailto:contato@azdevcoder.com.br"
+              >contato@azdevcoder.com.br</a
+            >
+            <a href="https://wa.me/5544988469950" target="_blank"
+              >Falar no WhatsApp</a
+            >
+            <a href="https://webmail.azdevcoder.com.br" target="_blank"
+              >Acessar Webmail</a
+            >
+            <a
+              href="https://portfolio.azdevcoder.com.br"
+              target="_blank"
+              rel="noopener"
+              >Portfólio</a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-bottom d-flex justify-content-between flex-wrap gap-2"
+        >
+          <span
+            >© <span id="year">2026</span> AzDev Coder — Todos os direitos
+            reservados • CNPJ: 58.964.559/0001-11 • Maringá - PR</span
+          >
+          <span
+            ><a href="#" class="d-inline">Privacidade</a> •
+            <a href="#" class="d-inline">Termos</a></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5544988469950"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Falar no WhatsApp"
+      ><img src="assets/img/whatsapp.svg" alt="WhatsApp" width="60" height="60"
+    /></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
